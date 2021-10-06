@@ -1,11 +1,16 @@
 import Nav from "../nav/Nav";
+import Meta from "../../components/Meta";
+import { useState } from "react";
 
 const Layout = ({ children }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <Nav />
+      <Meta />
+      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div>{children}</div>
     </>
   );
 };
 
-export default Layout
+export default Layout;

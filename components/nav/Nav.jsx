@@ -1,13 +1,26 @@
-import Image from "next/image";
-import githubLogo from "../../assets/github.png";
-import phoneLogo from "../../assets/phone-call.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = () => {
+const Nav = ({ menuOpen, setMenuOpen }) => {
   return (
-    <nav className="w-full bg-white flex px-6 pt-3">
+    <nav
+      className={
+        `transition duration-2000 ease w-full flex items-center bg-white px-6 py-3 ` +
+        (menuOpen && `bg-indigo-900 text-white`)
+      }
+    >
       <ul className="flex items-center w-4/5">
         <li className="">
-          <h3 className="text-3xl font-bold text-indigo-900 mr-8">Xavier</h3>
+          <h3
+            className={
+              menuOpen
+                ? `text-3xl font-bold mr-8 text-white`
+                : `text-3xl font-bold mr-8 text-indigo-900`
+            }
+          >
+            Xavier
+          </h3>
         </li>
         <a
           href="http://github.com/mrXavi3r"
@@ -16,27 +29,42 @@ const Nav = () => {
           className="mr-6"
         >
           <li>
-            <Image
-              src={githubLogo}
-              className="pt-4"
-              alt="github logo"
-              width={15}
-              height={15}
-            />{" "}
+            <FontAwesomeIcon icon={faCodeBranch} className="mr-1" />{" "}
             <span className="font-semibold">github.com/MrXavi3r</span>
           </li>
         </a>
         <li className="">
-          <Image src={phoneLogo} alt="github logo" width={13} height={13} />{" "}
+          <FontAwesomeIcon icon={faPhone} className="mr-1" />{" "}
           <span className="font-semibold opacity-0 hover:opacity-100">
             954-296-6361
           </span>
         </li>
       </ul>
-      <div className="flex flex-col justify-between w-8 h-8 ml-auto">
-        <span className="w-full h-1 bg-indigo-900"></span>
-        <span className="w-full h-1 bg-indigo-900"></span>
-        <span className="w-full h-1 bg-indigo-900"></span>
+      <div
+        className="flex flex-col justify-between w-8 h-7 ml-auto menu cursor-pointer"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span
+          className={
+            menuOpen
+              ? "transition duration-2000 ease w-full h-1 bg-white transform rotate-45 origin-bottom-left"
+              : "transition duration-2000 ease w-full h-1 bg-indigo-900"
+          }
+        ></span>
+        <span
+          className={
+            menuOpen
+              ? "transition-all duration-2000 ease opacity-0"
+              : "transition-all duration-2000 w-full h-1 bg-indigo-900"
+          }
+        ></span>
+        <span
+          className={
+            menuOpen
+              ? "transition duration-2000 ease w-full h-1 bg-white transform -rotate-45 origin-top-left"
+              : "transition duration-2000 ease w-full h-1 bg-indigo-900"
+          }
+        ></span>
       </div>
     </nav>
   );
