@@ -19,7 +19,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="" id="intro">
+    <section className="mb-10 container" id="intro">
       <div className="left">
         <div className="imgContainer">
           <Image
@@ -41,7 +41,7 @@ const Intro = () => {
             ></span>
           </h3>
         </div>
-        <Link href="/" className="">
+        <Link href="#portfolio" className="">
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
