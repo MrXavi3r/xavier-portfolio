@@ -1,6 +1,7 @@
 import Intro from '../components/intro/Intro';
 import Portfolio from '../components/portfolio/Portfolio';
 import Showcase from '../components/showcase/Showcase';
+import About from '../components/about/About';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Intro />
       <Portfolio />
       <Showcase />
+      <About />
     </div>
   )
 }
