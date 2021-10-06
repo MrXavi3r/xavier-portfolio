@@ -1,16 +1,9 @@
-import Head from 'next/head'
-
+import Intro from '../components/intro/Intro';
 
 export default function Home() {
   return (
     <div className="">
-      <Head>
-        <title>Xavier || Portfolio</title>
-        <meta name="description" content="Xavier Ritch - developer portfolio site" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      
+      <Intro />
     </div>
   )
 }
