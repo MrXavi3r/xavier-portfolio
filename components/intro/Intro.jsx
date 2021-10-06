@@ -4,14 +4,14 @@ import Link from "next/Link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import Xavier from "../../assets/xavier.svg";
+import Xavier from "/public/assets/xavier.svg";
 
 const Intro = () => {
   const textRef = useRef();
 
   useEffect(() => {
     init(textRef.current, {
-      showCursor: true,
+      showCursor: false,
       backDelay: 1800,
       backSpeed: 70,
       strings: ["Software Developer", "Tech Enthusiast", "Superhero"],
@@ -21,7 +21,7 @@ const Intro = () => {
   return (
     <section className="mb-10 container" id="intro">
       <div className="left">
-        <div className="imgContainer">
+        <div className="flex items-center justify-center">
           <Image
             src={Xavier}
             alt="Picture of Xavier"

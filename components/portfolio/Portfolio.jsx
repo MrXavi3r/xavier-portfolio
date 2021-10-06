@@ -9,7 +9,7 @@ import {
 import PortfolioList from "../portfolio-list/PortfolioList";
 import { list } from "../../data/listTabData";
 import Image from "next/image";
-import Phone from "../../assets/phone-call.png";
+import Phone from "/public/assets/phone-call.png";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");

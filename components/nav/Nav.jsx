@@ -7,8 +7,8 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav
       className={
-        "sticky top-0 z-10 transition duration-2000 ease w-full flex items-center bg-white px-4 py-3 " +
-        (menuOpen && `bg-indigo-900 text-white`)
+        "sticky top-0 z-50 transition duration-2000 ease w-full flex items-center bg-white px-4 py-3 " +
+        (menuOpen && "bg-indigo-900 text-white")
       }
     >
       <ul className="flex items-center w-4/5">
