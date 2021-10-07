@@ -7,10 +7,18 @@ import Diver from "../../public/assets/scuba.svg";
 
 const About = () => {
   return (
-    <section className="container px-4 my-10 bg-pink-100" id="about">
-      <div className="left">
-        <h2 className="text-3xl font-semibold">A BIT ABOUT ME...</h2>
-        <Image src={AboutImg} alt="about" width="600" className="hidden" />
+    <section className="container px-4 pb-4 my-10 bg-pink-100" id="about">
+      <h2 className="text-3xl py-6 font-normal font-raleway">
+        A BIT ABOUT ME...
+      </h2>
+      <div className="hidden">
+        <Image
+          src={AboutImg}
+          alt="about"
+          width="600"
+          height="500"
+          className=""
+        />
       </div>
       <div className="right">
         <div className="mb-6 flex">
@@ -20,7 +28,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p>
+            <p className="font-sans font-normal">
               Self improvement is a value I hold close. Each day I strive to not
               only level up my skills, but to also positively impact anyone whom
               I come in touch with during that process.
@@ -38,7 +46,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p>
+            <p className="font-sans font-normal">
               Im eager to work on challenging projects alongside other talented
               developers and eventually id like to explore emerging technologies
               such as blockchain.
@@ -52,7 +60,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p>
+            <p className="font-sans font-normal">
               Aside from coding, ive been involved in the financial markets as a
               trader for just over a decade. I spend much of my time online
               analyzing charts, managing trades, and reading financial news
@@ -67,7 +75,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p>
+            <p className="font-sans font-normal">
               Despite the time I spend online, im a big outdoors guy. I love
               playing sports, running at the track and playing pickup
               basketball. I love to explore. Skydiving is on my bucket list, and

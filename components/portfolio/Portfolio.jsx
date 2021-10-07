@@ -6,7 +6,7 @@ import {
   websitePortfolio,
   comingSoonPortfolio,
 } from "../../data/portfolioData";
-import PortfolioList from "../portfolio-list/PortfolioList";
+import PortfolioList from "./PortfolioList";
 import { list } from "../../data/listTabData";
 import Image from "next/image";
 import Phone from "/public/assets/phone-call.png";
@@ -39,10 +39,12 @@ const Portfolio = () => {
 
   return (
     <section
-      className="container bg-yellow-50 flex flex-col items-center mt-6 h-96"
+      className="container bg-yellow-50 flex flex-col items-center mt-6 h-auto"
       id="portfolio"
     >
-      <h1 className="text-center text-4xl font-semibold mt-4">Portfolio</h1>
+      <h1 className="text-center text-4xl font-normal font-raleway mt-4">
+        Portfolio
+      </h1>
       <ul className="flex items-center justify-center px-2 mb-4">
         {list.map((item) => {
           return (

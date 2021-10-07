@@ -33,11 +33,13 @@ const Intro = () => {
       <div className="flex flex-col items-center h-60 w-full">
         <div className="flex flex-col justify-center items-center w-full h-full">
           <h2 className="text-red-400 text-3xl font-semibold">welcome, im</h2>
-          <h1 className="text-5xl font-semibold">Xavier Ricardo</h1>
+          <h1 className="text-5xl font-semibold font-raleway">
+            Xavier Ricardo
+          </h1>
           <h3>
             <span
               ref={textRef}
-              className="text-purple-300 text-2xl font-semibold"
+              className="text-purple-300 text-2xl font-semibold h-full"
             ></span>
           </h3>
         </div>

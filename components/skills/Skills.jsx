@@ -7,7 +7,7 @@ import MongoDb from "../../public/assets/mongodb.svg";
 const Skills = () => {
   return (
     <section className="px-6 mb-6" id="skills">
-      <div className="heading-block">
+      <div className="">
         <h2 className="font-normal  text-3xl text-center pb-4 font-raleway">
           Software Development With Purpose
         </h2>
@@ -16,7 +16,7 @@ const Skills = () => {
           programming I explore serves to strengthen that.
         </p>
       </div>
-      <div className="skill-container grid grid-cols-1 gap-4 justify-center items-center">
+      <div className="container mt-8 grid grid-cols-1 gap-4 justify-center items-center">
         <div className="p-3 flex flex-col bg-indigo-100 h-full">
           <Image
             src={React}
@@ -32,7 +32,7 @@ const Skills = () => {
             ReactJs is my strongest Javascript library. Modular,
             easily-reuseable component architecture and virtual DOM are what
             truly set React apart. Im familiar with class and function
-            components, hooks, context, & router.
+            components, hooks, context, router & Next.js.
           </p>
         </div>
         <div className="p-3 flex flex-col bg-gray-400 h-full">
@@ -54,7 +54,7 @@ const Skills = () => {
           <p className="font-sans font-normal">
             Creating friendly and attractive user interfaces and experiences is
             a cornerstone of web development. For styling, im competent in CSS,
-            SCSS and the Bootstrap framework.
+            SCSS, Bootstrap and TailwindCSS framework.
           </p>
         </div>
         <div className="p-3 flex flex-col bg-green-100 h-full">
