@@ -7,6 +7,9 @@ module.exports = {
       transitionDuration: {
         2000: "2000ms",
       },
+      fontFamily: {
+        'raleway': ["Raleway", "sans-serif"]
+      }
     },
   },
   variants: {
