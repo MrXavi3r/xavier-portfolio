@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/Image";
 import AboutImg from "../../public/assets/about_img.svg";
 import CogWheel from "../../public/assets/cogwheels.svg";
 import Blockchain from "../../public/assets/blockchain.svg";
@@ -7,7 +7,10 @@ import Diver from "../../public/assets/scuba.svg";
 
 const About = () => {
   return (
-    <section className="container px-4 pb-4 my-10 bg-pink-100" id="about">
+    <section
+      className="sections container px-4 pb-4 my-10 bg-pink-100"
+      id="about"
+    >
       <h2 className="text-3xl py-6 font-normal font-raleway">
         A BIT ABOUT ME...
       </h2>

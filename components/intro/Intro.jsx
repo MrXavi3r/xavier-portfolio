@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Link from "next/Link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+import Image from "next/Image";
 import Xavier from "/public/assets/xavier.svg";
 
 const Intro = () => {
@@ -19,7 +19,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="mb-10 container" id="intro">
+    <section className="sections mb-10 container" id="intro">
       <div className="left">
         <div className="flex items-center justify-center">
           <Image

@@ -6,7 +6,7 @@ import MongoDb from "../../public/assets/mongodb.svg";
 
 const Skills = () => {
   return (
-    <section className="px-6 mb-6" id="skills">
+    <section className="sections container px-6 mb-6" id="skills">
       <div className="">
         <h2 className="font-normal  text-3xl text-center pb-4 font-raleway">
           Software Development With Purpose
