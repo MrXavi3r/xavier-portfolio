@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Link from "next/Link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/Image";
+import Image from "next/image";
 import Xavier from "/public/assets/xavier.svg";
 
 const Intro = () => {

@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import AboutImg from "../../public/assets/about_img.svg";
 import CogWheel from "../../public/assets/cogwheels.svg";
 import Blockchain from "../../public/assets/blockchain.svg";
