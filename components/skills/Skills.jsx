@@ -6,9 +6,9 @@ import MongoDb from "../../public/assets/mongodb.svg";
 
 const Skills = () => {
   return (
-    <section className="sections container px-6 mb-6" id="skills">
+    <section className="container px-6 mb-6" id="skills">
       <div className="">
-        <h2 className="font-normal  text-3xl text-center pb-4 font-raleway">
+        <h2 className="font-normal text-3xl text-center pb-4 font-raleway">
           Software Development With Purpose
         </h2>
         <p className="text-center pb-4">
@@ -17,7 +17,7 @@ const Skills = () => {
         </p>
       </div>
       <div className="container mt-8 grid grid-cols-1 gap-4 justify-center items-center">
-        <div className="p-3 flex flex-col bg-indigo-100 h-full">
+        <div className="p-3 rounded-xl flex flex-col bg-indigo-100 h-full">
           <Image
             src={React}
             alt="react-logo"
@@ -35,7 +35,7 @@ const Skills = () => {
             components, hooks, context, router & Next.js.
           </p>
         </div>
-        <div className="p-3 flex flex-col bg-gray-400 h-full">
+        <div className="p-3 rounded-xl flex flex-col bg-gray-400 h-full">
           <Image src={Node} alt="node.js logo" width={80} height={80} />
           <h4 className="font-normal text-xl text-center py-2 font-raleway">
             Seamless Backend Integration
@@ -46,7 +46,7 @@ const Skills = () => {
             from scratch and interfacing with 3rd party APIs.
           </p>
         </div>
-        <div className="p-3 flex flex-col bg-pink-100 h-full">
+        <div className="p-3 rounded-xl flex flex-col bg-pink-100 h-full">
           <Image src={Sass} alt="sass logo" width={80} height={80} />
           <h4 className="font-normal text-xl font-raleway text-center py-2">
             Attractive Design
@@ -57,7 +57,7 @@ const Skills = () => {
             SCSS, Bootstrap and TailwindCSS framework.
           </p>
         </div>
-        <div className="p-3 flex flex-col bg-green-100 h-full">
+        <div className="p-3 rounded-xl flex flex-col bg-green-100 h-full">
           <Image src={MongoDb} alt="mongoDB logo" width={90} height={90} />
           <h4 className="font-normal text-xl text-center py-2 font-raleway">
             Convenient Database Solutions

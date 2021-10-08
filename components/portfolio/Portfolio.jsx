@@ -45,7 +45,7 @@ const Portfolio = () => {
       <h1 className="text-center text-4xl font-normal font-raleway mt-4">
         Portfolio
       </h1>
-      <ul className="flex items-center justify-center px-2 mb-4">
+      <ul className="flex items-center justify-center px-2 mb-4 flex-wrap">
         {list.map((item) => {
           return (
             <PortfolioList
@@ -62,7 +62,7 @@ const Portfolio = () => {
         {data.map((d) => {
           return (
             <div
-              className="m-3 px-1 w-48 h-48 rounded flex items-center justify-center text-white cursor-pointer relative hover:bg-indigo-900 transition-all duration-500 ease-in-out"
+              className="m-3 px-1 w-full h-48 rounded-xl flex items-center justify-center text-white cursor-pointer relative hover:bg-indigo-900 transition-all duration-500 ease-in-out"
               key={d.id}
             >
               <Image
@@ -70,6 +70,7 @@ const Portfolio = () => {
                 width={100}
                 height={100}
                 alt={d.title}
+                objectFit="contain"
                 className="z-10 hover:opacity-20 hover:z-0"
               />
               <h3 className="absolute text-2xl font-semibold">{d.title}</h3>

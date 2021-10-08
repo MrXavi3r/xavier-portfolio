@@ -6,7 +6,7 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <section
-      className="sections container flex flex-col items-center px-6 pb-4 mt-10"
+      className="container flex flex-col items-center px-6 pb-4 mt-10"
       id="testimonials"
     >
       <h1 className="text-3xl py-6 font-normal font-raleway">

@@ -20,7 +20,6 @@ const Contact = () => {
     return () => clearTimeout(messageTimeout);
   }, [validationMessage]);
 
-
   const postMessage = async () => {
     const response = await axios.post("https://formspree.io/f/xwkrywaq", {
       name,
@@ -30,7 +29,6 @@ const Contact = () => {
     console.log(response);
   };
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
     let validation = document.getElementById("validation-message");
@@ -53,11 +51,11 @@ const Contact = () => {
 
   return (
     <section
-      className="sections container contact h-auto p-8 bg-gradient-to-r from-purple-50 to-purple-200"
+      className="container contact h-auto p-8 bg-gradient-to-r from-purple-50 to-purple-200"
       id="contact"
     >
       <div className="container">
-        <div className="left container">
+        <div className="container">
           <form
             noValidate
             onSubmit={handleSubmit}
@@ -75,17 +73,19 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              placeholder="Bruce Wayne"
+              placeholder="Thomas A Anderson"
               name="name"
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="mb-4 p-2 w-4/5 bg-purple-50 rounded-xl focus-within:text-gray-600"
             />
-            <label htmlFor="name">Your Email:</label>
+            <label htmlFor="name" className="">
+              Your Email:
+            </label>
             <input
               type="email"
-              placeholder="Bruce@wayneenterprises.net"
+              placeholder="Neo@metacortex.net"
               name="email"
               id="email"
               value={email}
@@ -94,7 +94,7 @@ const Contact = () => {
             />
             <label htmlFor="name">Your Message:</label>
             <textarea
-              placeholder="X! been a while. listen, I think we need a new justice league website..."
+              placeholder="X! follow the white rabbit..."
               name="message"
               id="message-field"
               value={messageField}
@@ -103,7 +103,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="rounded-3xl w-4/5 p-3 mt-8 my-4 bg-purple-400 text-white text-xl font-raleway"
+              className="rounded-3xl w-4/5 p-3 mt-8 my-4 bg-purple-400 text-white text-xl font-raleway transition-all ease duration-400"
               id="submit-btn"
             >
               Send Message

@@ -4,7 +4,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-.sections {
+* {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }

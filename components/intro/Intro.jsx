@@ -36,12 +36,12 @@ const Intro = () => {
           <h1 className="text-5xl font-semibold font-raleway">
             Xavier Ricardo
           </h1>
-          <h3>
-            <span
+          <span className="h-1/5">
+            <h3
               ref={textRef}
               className="text-purple-300 text-2xl font-semibold h-full"
-            ></span>
-          </h3>
+            ></h3>
+          </span>
         </div>
         <Link href="#portfolio" className="">
           <FontAwesomeIcon

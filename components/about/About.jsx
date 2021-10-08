@@ -7,11 +7,8 @@ import Diver from "../../public/assets/scuba.svg";
 
 const About = () => {
   return (
-    <section
-      className="sections container px-4 pb-4 my-10 bg-pink-100"
-      id="about"
-    >
-      <h2 className="text-3xl py-6 font-normal font-raleway">
+    <section className="container px-4 pb-4 my-10 bg-blue-50" id="about">
+      <h2 className="text-3xl py-6 font-normal text-center font-raleway">
         A BIT ABOUT ME...
       </h2>
       <div className="hidden">
