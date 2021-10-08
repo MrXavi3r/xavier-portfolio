@@ -9,7 +9,6 @@ import {
 import PortfolioList from "./PortfolioList";
 import { list } from "../../data/listTabData";
 import Image from "next/image";
-import Phone from "/public/assets/phone-call.png";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
@@ -66,9 +65,9 @@ const Portfolio = () => {
               key={d.id}
             >
               <Image
-                src={Phone}
-                width={100}
-                height={100}
+                src={d.img}
+                width={350}
+                height={350}
                 alt={d.title}
                 objectFit="contain"
                 className="z-10 hover:opacity-20 hover:z-0"

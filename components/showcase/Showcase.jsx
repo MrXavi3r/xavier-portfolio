@@ -2,7 +2,7 @@ import SliderComponent from "./Slider";
 
 const Showcase = () => {
   return (
-    <section className="container pt-5 flex flex-col" id="showcase">
+    <section className="container pt-5 flex flex-col h-full" id="showcase">
       <h2 className="text-center text-3xl font-normal font-raleway mb-6">
         Showcase Project
       </h2>
