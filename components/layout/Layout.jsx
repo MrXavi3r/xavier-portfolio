@@ -1,4 +1,5 @@
 import Nav from "../nav/Nav";
+import { Menu } from "../menu/Menu";
 import Meta from "../../components/Meta";
 import { useState } from "react";
 
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Meta />
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div>{children}</div>
     </>
   );
