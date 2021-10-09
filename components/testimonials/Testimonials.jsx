@@ -17,7 +17,7 @@ const Testimonials = () => {
           return (
             <div
               className={
-                "review-card w-78 h-64 p-5 my-4 rounded-lg flex flex-col justify-around transition-all duration-1000 ease-in-out"
+                "review-card w-78 md:w-3/5 h-64 p-5 my-4 rounded-lg flex flex-col justify-around transition-all duration-1000 ease-in-out"
               }
               key={d.id}
             >
@@ -46,7 +46,7 @@ const Testimonials = () => {
                   className=""
                 />
               </div>
-              <div className="center rounded">{d.desc}</div>
+              <div className="center rounded">"{d.desc}"</div>
               <div className="bottom items-center justify-center flex flex-col">
                 <h3 className="font-semibold">{d.name}</h3>
                 <h4 className="text-gray-900">{d.title}</h4>

@@ -59,7 +59,7 @@ const Contact = () => {
           <form
             noValidate
             onSubmit={handleSubmit}
-            className="flex flex-col items-center justify-center rounded-2xl p-6 bg-white w-full"
+            className="flex flex-col items-center justify-center rounded-2xl mx-auto p-6 bg-white w-full md:w-3/4"
           >
             <h3 className="font-raleway text-4xl pb-4 font-semibold text-purple-500">
               Let's talk

@@ -22,6 +22,6 @@ export const data = [
     title: "Owner of Petx.com",
     img: "/assets/donovan.jpeg",
     icon: "/assets/dog.png",
-    desc: "Xavier built an awesome website for me. I'm really pleased with the result. Looking forward to working with him again",
+    desc: "Xavier built an awesome component for my website. I'm really pleased with the result. Looking forward to working with him again",
   },
 ];

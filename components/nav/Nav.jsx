@@ -16,9 +16,8 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
           <Link href="/">
             <h3
               className={
-                menuOpen
-                  ? "transition duration-2000 text-3xl font-bold mr-4 text-white cursor-pointer"
-                  : "transition duration-2000 text-3xl font-bold mr-4 text-indigo-900 cursor-pointer"
+                "transition duration-2000 text-3xl font-bold mr-4 cursor-pointer " +
+                (menuOpen ? "text-white" : "text-indigo-900")
               }
             >
               Xavier

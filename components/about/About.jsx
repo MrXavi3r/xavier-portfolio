@@ -11,7 +11,7 @@ const About = () => {
       <h2 className="text-3xl py-6 font-normal text-center font-raleway">
         A BIT ABOUT ME...
       </h2>
-      <div className="hidden">
+      <div className="hidden large:flex">
         <Image
           src={AboutImg}
           alt="about"
@@ -20,7 +20,7 @@ const About = () => {
           className=""
         />
       </div>
-      <div className="right">
+      <div className="md:px-16">
         <div className="mb-6 flex">
           <span>
             <div className="rounded-full w-24 h-24 bg-yellow-200 flex items-center justify-center">
@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p className="font-sans font-normal">
+            <p className="font-sans font-normal md:text-lg">
               Self improvement is a value I hold close. Each day I strive to not
               only level up my skills, but to also positively impact anyone whom
               I come in touch with during that process.
@@ -46,7 +46,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p className="font-sans font-normal">
+            <p className="font-sans font-normal md:text-lg">
               Im eager to work on challenging projects alongside other talented
               developers and eventually id like to explore emerging technologies
               such as blockchain.
@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p className="font-sans font-normal">
+            <p className="font-sans font-normal md:text-lg">
               Aside from coding, ive been involved in the financial markets as a
               trader for just over a decade. I spend much of my time online
               analyzing charts, managing trades, and reading financial news
@@ -75,7 +75,7 @@ const About = () => {
             </div>
           </span>
           <div className="pl-4">
-            <p className="font-sans font-normal">
+            <p className="font-sans font-normal md:text-lg">
               Despite the time I spend online, im a big outdoors guy. I love
               playing sports, running at the track and playing pickup
               basketball. I love to explore. Skydiving is on my bucket list, and

@@ -19,29 +19,32 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="sections mb-10 container" id="intro">
-      <div className="left">
-        <div className="flex items-center justify-center">
+    <section
+      className="sections md:justify-center md:flex md:items-center md:w-full container"
+      id="intro"
+    >
+      <div className="md:w-full flex items-center justify-center">
+        <div style={{ position: "relative", width: "100%", height: "80vh" }}>
           <Image
+            priority
+            alt="xavier"
+            layout="fill"
+            objectFit="fill"
+            quality="100"
             src={Xavier}
-            alt="Picture of Xavier"
-            width={500}
-            height={500}
           />
         </div>
       </div>
-      <div className="flex flex-col items-center h-60 w-full">
-        <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="flex flex-col items-center justify-around md:h-96 w-full">
+        <div className="flex flex-col justify-center items-center w-full h-full space-y-2">
           <h2 className="text-red-400 text-3xl font-semibold">welcome, im</h2>
           <h1 className="text-5xl font-semibold font-raleway">
             Xavier Ricardo
           </h1>
-          <span className="h-1/5">
-            <h3
-              ref={textRef}
-              className="text-purple-300 text-2xl font-semibold h-full"
-            ></h3>
-          </span>
+          <h3
+            ref={textRef}
+            className="text-purple-300 text-2xl font-semibold h-3.5 mb-3"
+          />
         </div>
         <Link href="#portfolio" className="">
           <FontAwesomeIcon

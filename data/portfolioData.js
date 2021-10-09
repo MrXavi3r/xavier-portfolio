@@ -1,12 +1,12 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "MovieDb",
+    title: "Movie Database App",
     img: "/assets/portfolio-images/moviedb.jpg",
   },
   {
     id: 2,
-    title: "Dashboard",
+    title: "Dashboard App",
     img: "/assets/portfolio-images/dashboard.jpg",
   },
   {
@@ -19,7 +19,7 @@ export const featuredPortfolio = [
 export const webPortfolio = [
   {
     id: 5,
-    title: "Art Aficionado Quiz",
+    title: "Art Aficionado Quiz App",
     img: "/assets/portfolio-images/quiz-app.jpg",
   },
   {
@@ -29,7 +29,7 @@ export const webPortfolio = [
   },
   {
     id: 4,
-    title: "Bookmarks",
+    title: "Bookmarks App",
     img: "/assets/portfolio-images/bookmarks2.jpg",
   },
 ];

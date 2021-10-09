@@ -8,7 +8,7 @@ import Contact from "../components/contact/Contact";
 
 export default function Home() {
   return (
-    <div className="sections container">
+    <div className="sections container mx-auto">
       <Intro />
       <Portfolio />
       <Showcase />
