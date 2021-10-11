@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/Link";
 
@@ -11,7 +11,7 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
         (menuOpen && "bg-indigo-900 text-white")
       }
     >
-      <ul className="flex items-center w-4/5">
+      <ul className="flex items-center w-4/5 gap-x-8">
         <li className="">
           <Link href="/">
             <h3
@@ -30,12 +30,12 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
           rel="noopener noreferrer"
           className="mr-6"
         >
-          <li className="hidden">
-            <FontAwesomeIcon icon={faCodeBranch} className="mr-1" />{" "}
+          <li className="hidden md:block">
+            <FontAwesomeIcon icon={faGithub} className="mr-1" />{" "}
             <span className="font-semibold">github.com/MrXavi3r</span>
           </li>
         </a>
-        <li className="hidden">
+        <li className="hidden md:block">
           <FontAwesomeIcon icon={faPhone} className="mr-1" />{" "}
           <span className="font-semibold opacity-0 hover:opacity-100">
             954-296-6361
@@ -48,23 +48,24 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
       >
         <span
           className={
-            menuOpen
-              ? "transition duration-2000 ease w-full h-1 bg-white transform rotate-45 origin-bottom-left"
-              : "transition duration-2000 ease w-full h-1 bg-indigo-900"
+            "transition duration-2000 ease w-full h-1 " +
+            (menuOpen
+              ? "bg-white transform rotate-45 origin-bottom-left"
+              : "bg-indigo-900")
           }
         ></span>
         <span
           className={
-            menuOpen
-              ? "transition-all duration-2000 ease opacity-0"
-              : "transition-all duration-2000 w-full h-1 bg-indigo-900"
+            "w-full h-1 bg-indigo-900 transition-all duration-2000 ease " +
+            (menuOpen && "opacity-0")
           }
         ></span>
         <span
           className={
-            menuOpen
-              ? "transition duration-2000 ease w-full h-1 bg-white transform -rotate-45 origin-top-left"
-              : "transition duration-2000 ease w-full h-1 bg-indigo-900"
+            "w-full h-1 transition duration-2000 ease " +
+            (menuOpen
+              ? "bg-white transform -rotate-45 origin-top-left"
+              : "bg-indigo-900")
           }
         ></span>
       </div>

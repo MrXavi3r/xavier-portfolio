@@ -8,8 +8,11 @@ module.exports = {
         2000: "2000ms",
       },
       fontFamily: {
-        'raleway': ["Raleway", "sans-serif"]
-      }
+        raleway: ["Raleway", "sans-serif"],
+      },
+      gridAutoColumns: {
+        "2fr": "minmax(0, 2fr)",
+      },
     },
   },
   variants: {

@@ -11,7 +11,7 @@ export const data = [
     id: "2",
     icon: "/assets/controller.png",
     title: "DASHBOARD",
-    desc: "Using Node/Express Js, live stock/forex/crypto market data and news headlines are fetched from third party API's, cached on the backend and sent to the client interface via a custom built API.",
+    desc: "Using Node/ExpressJs, users are given access to live stock/forex/crypto market data and news headlines are fetched from third party API's, cached on the backend and sent to the client interface via a custom built API.",
     img: "/assets/screenshot2.jpg",
     github: "https://github.com/MrXavi3r/dashboard2.0",
   },

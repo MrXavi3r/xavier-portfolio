@@ -6,18 +6,19 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <section
-      className="container flex flex-col items-center px-6 pb-4 mt-10"
+      className="container h-auto flex flex-col items-center px-12 pb-4 mt-10"
       id="testimonials"
     >
       <h1 className="text-3xl py-6 font-normal font-raleway">
         People who've said nice things...
       </h1>
-      <div className="container flex flex-col items-center justify-center">
+      <div className="container flex flex-col lg:flex-row items-center justify-center">
         {data.map((d) => {
           return (
             <div
               className={
-                "review-card w-78 md:w-3/5 h-64 p-5 my-4 rounded-lg flex flex-col justify-around transition-all duration-1000 ease-in-out"
+                "review-card w-78 md:w-3/5 lg:w-1/5 lg:mx-12 lg:h-96 h-64 p-5 my-4 lg:my-14 rounded-lg flex flex-col justify-around transition-all duration-1000 ease-in-out " +
+                (d.featured && "scale-110")
               }
               key={d.id}
             >
