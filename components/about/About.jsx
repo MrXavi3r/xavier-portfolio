@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutImg from "../../public/assets/about_img.svg";
+import Brain from "../../public/assets/brain.svg";
 import CogWheel from "../../public/assets/cogwheels.svg";
 import Blockchain from "../../public/assets/blockchain.svg";
 import ExchangeRate from "../../public/assets/exchange-rate.svg";
@@ -8,22 +8,16 @@ import Diver from "../../public/assets/scuba.svg";
 const About = () => {
   return (
     <section
-      className="container px-4 pb-4 my-10 bg-blue-50 lg:grid lg:grid-cols-2"
+      className="container px-4 pb-4 my-10 bg-pink-50 lg:grid lg:grid-cols-2"
       id="about"
     >
-      <h2 className="text-3xl lg:text-5xl lg:col-span-4 py-6 font-normal text-center font-raleway">
+      <h2 className="text-3xl lg:text-5xl lg:text-left lg:col-span-4 py-6 font-normal text-center font-raleway">
         A BIT ABOUT ME...
       </h2>
       <div className="hidden lg:flex items-center justify-center">
-        <Image
-          src={AboutImg}
-          alt="about"
-          width="600"
-          height="500"
-          className=""
-        />
+        <Image src={Brain} alt="about" width="600" height="500" className="" />
       </div>
-      <div className="md:px-16">
+      <div className="md:px-16 lg:pl-0">
         <div className="mb-6 flex">
           <span>
             <div className="rounded-full w-24 h-24 bg-yellow-200 flex items-center justify-center">

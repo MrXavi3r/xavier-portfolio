@@ -6,7 +6,7 @@ const Showcase = () => {
       <h2 className="text-center text-3xl md:text-4xl font-normal font-raleway mb-6">
         Showcase Project
       </h2>
-      <div className="flex w-full h-4/5 border-0 rounded my-0 mx-auto">
+      <div className="flex w-full border-0 my-0 mx-auto">
         <SliderComponent />
       </div>
     </section>

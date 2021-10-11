@@ -8,15 +8,15 @@ const Skills = () => {
   return (
     <section className="container px-6 mb-6" id="skills">
       <div className="">
-        <h2 className="font-normal text-3xl md:text-4xl text-center pb-4 font-raleway">
-          Software Development With Purpose
+        <h2 className="font-normal text-3xl md:text-4xl lg:text-5xl text-center pb-4 font-raleway">
+          Software Development Skills
         </h2>
         {/* <p className="pb-4 md:px-20">
           Javascript is the core of my engineering skill-set. Every branch of
           programming I explore serves to strengthen that.
         </p> */}
       </div>
-      <div className="container lg:w-4/5 lg:mx-auto mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 lg:auto-cols-2fr justify-center items-center">
+      <div className="container lg:w-3/5 lg:mx-auto mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 lg:auto-cols-2fr justify-center items-center">
         <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-indigo-100 h-full">
           <Image
             src={React}

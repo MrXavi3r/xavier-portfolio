@@ -20,7 +20,7 @@ const SliderComponent = () => {
       {data.map((d) => {
         return (
           <div key={d.id} className="container w-full overflow-hidden">
-            <div className="h-auto flex flex-col items-center justify-center">
+            <div className="h-auto flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:place-items-center">
               <div className="w-5/6">
                 <div className="">
                   <h2 className="my-4 font-bold text-xl text-center">
@@ -32,13 +32,13 @@ const SliderComponent = () => {
                   <p className="mb-4 font-serif md:text-lg">{d.desc}</p>
                 </div>
               </div>
-              <div className="">
+              <div className="relative w-4/5 h-40 md:h-52 lg:w-4/5 lg:h-64">
                 <Image
                   src={d.img}
-                  // layout="fill"
+                  layout="fill"
                   objectFit="contain"
-                  width="280"
-                  height="150"
+                  // width="280"
+                  // height="150"
                   alt={d.title}
                   placeholder="blur"
                   quality="100"

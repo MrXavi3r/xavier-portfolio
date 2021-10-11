@@ -70,7 +70,7 @@ const Contact = () => {
             </h3>
             <p className="font-serif text-gray-500 pb-4 px-6">
               Want to grab some coffee and ponder the meaning of life with me?
-              Fill out this form and i'll get back to you.
+              Fill out this form to send me a message.
             </p>
             <label htmlFor="name" className="">
               Your Name:
@@ -147,7 +147,12 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <div className="contact-icon linkedin">
-                <FontAwesomeIcon icon={faLinkedin} size="4x" color="#0270ad" />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="4x"
+                  color="#0270ad"
+                  className="hover:animate-bounce"
+                />
               </div>
             </a>
             <a
@@ -156,7 +161,11 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <div className="contact-icon github">
-                <FontAwesomeIcon icon={faGithub} size="4x" />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="4x"
+                  className="hover:animate-bounce"
+                />
               </div>
             </a>
             <a
@@ -169,6 +178,7 @@ const Contact = () => {
                   icon={faStackOverflow}
                   size="4x"
                   color="#ee7c24"
+                  className="hover:animate-bounce"
                 />
               </div>
             </a>
