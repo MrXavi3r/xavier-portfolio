@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { init } from "ityped";
 import { useRef, useEffect } from "react";
 import Link from "next/link";
@@ -38,7 +39,7 @@ const Intro = () => {
       </div>
       <div className="flex flex-col items-center justify-start lg:justify-center h-2/5 lg:h-full w-full">
         <div className="flex flex-col justify-start lg:justify-center items-center w-full h-3/5 space-y-1">
-          <h2 className="text-red-400 text-3xl font-semibold">welcome, im</h2>
+          <h2 className="text-red-400 text-3xl font-semibold">welcome, i'm</h2>
           <h1 className="sm:text-3xl text-5xl md:text-6xl font-semibold font-raleway text-center">
             Xavier Ricardo
           </h1>
@@ -47,7 +48,7 @@ const Intro = () => {
             className="text-purple-300 text-2xl font-semibold h-3.5 mb-3"
           />
         </div>
-        <Link href="#portfolio" className="">
+        <Link href="#portfolio" className="" passHref>
           <FontAwesomeIcon
             icon={faAngleDown}
             size="2x"
