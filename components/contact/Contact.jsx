@@ -30,26 +30,25 @@ const Contact = () => {
       email,
       messageField,
     });
-    console.log(response);
+    if (response.statusText === "ok" || "OK") {
+      setValidationMessage("Thanks! I will reply ASAP".fontcolor("green"));
+    } else {
+      setValidationMessage("server error, please try again later".fontcolor("red"));
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let validation = document.getElementById("validation-message");
 
     if (name === "" || messageField === "" || email === "") {
-      validation.style.color = "red";
-      setValidationMessage("Oops! looks like you missed some input fields");
+      setValidationMessage("Oops! looks like you missed some input fields".fontcolor("red"));
     } else if (!email.includes("@") || !email.includes(".")) {
-      validation.style.color = "red";
-      setValidationMessage("your email seems a bit... sketchy");
+      setValidationMessage("your email seems a bit... sketchy".fontcolor("red"));
     } else {
       postMessage();
-      validation.style.color = "green";
       setName("");
       setEmail("");
       setMessageField("");
-      setValidationMessage("Thanks! I will reply ASAP");
     }
   };
 
