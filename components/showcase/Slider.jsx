@@ -9,7 +9,7 @@ const settings = {
   adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 10000,
   fade: false,
 };
@@ -22,14 +22,16 @@ const SliderComponent = () => {
           <div key={d.id} className="container w-full overflow-hidden">
             <div className="h-auto flex flex-col items-center justify-center lg:grid lg:grid-cols-2 lg:place-items-center">
               <div className="w-5/6">
-                <div className="">
-                  <h2 className="my-4 font-bold text-xl text-center">
+                <div className="flex flex-col">
+                  <h2 className="mt-4 font-bold text-xl text-center">
                     {d.title}
                   </h2>
-                  <small className="text-center text- text-red-500">
+                  <small className="text-red-500 mx-auto text-center">
                     (in development)
                   </small>
-                  <p className="mb-4 font-serif md:text-lg">{d.desc}</p>
+                  <p className="mb-4 font-serif md:text-lg text-center">
+                    {d.desc}
+                  </p>
                 </div>
               </div>
               <div className="relative w-4/5 h-40 md:h-52 lg:w-4/5 lg:h-64">

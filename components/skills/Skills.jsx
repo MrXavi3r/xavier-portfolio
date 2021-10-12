@@ -16,7 +16,7 @@ const Skills = () => {
           programming I explore serves to strengthen that.
         </p> */}
       </div>
-      <div className="container lg:w-3/5 lg:mx-auto mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 lg:auto-cols-2fr justify-center items-center">
+      <div className="container lg:w-4/5 lg:mx-auto md:mx-auto md:w-4/5 mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 lg:auto-cols-2fr justify-center items-center">
         <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-indigo-100 h-full">
           <Image
             src={React}
@@ -28,7 +28,7 @@ const Skills = () => {
           <h4 className="font-normal text-xl md:text-2xl text-center py-2 font-raleway">
             Frontend Technology
           </h4>
-          <p className="font-sans font-normal md:text-lg">
+          <p className="font-sans font-normal md:text-lg text-center">
             ReactJs is my strongest Javascript library. Modular,
             easily-reuseable component architecture and virtual DOM are what
             truly set React apart. Im familiar with class and function
@@ -40,7 +40,7 @@ const Skills = () => {
           <h4 className="font-normal text-xl md:text-2xl text-center py-2 font-raleway">
             Backend Integrations
           </h4>
-          <p className="font-sans font-normal md:text-lg">
+          <p className="font-sans font-normal md:text-lg text-center">
             Node/ExpressJs is the perfect server side solution for Javascript
             front-ends. Im familiar with creating REST APIs and local servers
             from scratch and interfacing with 3rd party APIs.
@@ -51,7 +51,7 @@ const Skills = () => {
           <h4 className="font-normal text-xl md:text-2xl font-raleway text-center py-2">
             Styling
           </h4>
-          <p className="font-sans font-normal md:text-lg">
+          <p className="font-sans font-normal md:text-lg text-center">
             Creating friendly and attractive user interfaces and experiences is
             a cornerstone of web development. For styling, im competent in CSS,
             SCSS, Bootstrap and TailwindCSS framework.
@@ -62,7 +62,7 @@ const Skills = () => {
           <h4 className="font-normal text-xl md:text-2xl text-center py-2 font-raleway">
             Databases
           </h4>
-          <p className="font-sans font-normal md:text-lg">
+          <p className="font-sans font-normal md:text-lg text-center">
             MongoDB is my database of choice for its schema flexibility, cloud
             accessibility, and JSON-like document structure.
           </p>
