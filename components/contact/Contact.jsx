@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/Link";
+import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -33,7 +33,9 @@ const Contact = () => {
     if (response.statusText === "ok" || "OK") {
       setValidationMessage("Thanks! I will reply ASAP".fontcolor("green"));
     } else {
-      setValidationMessage("server error, please try again later".fontcolor("red"));
+      setValidationMessage(
+        "server error, please try again later".fontcolor("red")
+      );
     }
   };
 
@@ -41,9 +43,13 @@ const Contact = () => {
     e.preventDefault();
 
     if (name === "" || messageField === "" || email === "") {
-      setValidationMessage("Oops! looks like you missed some input fields".fontcolor("red"));
+      setValidationMessage(
+        "Oops! looks like you missed some input fields".fontcolor("red")
+      );
     } else if (!email.includes("@") || !email.includes(".")) {
-      setValidationMessage("your email seems a bit... sketchy".fontcolor("red"));
+      setValidationMessage(
+        "your email seems a bit... sketchy".fontcolor("red")
+      );
     } else {
       postMessage();
       setName("");

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/Link";
+import Link from "next/link";
 
 const Nav = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -13,7 +13,7 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
     >
       <ul className="flex items-center w-4/5 gap-x-8">
         <li className="">
-          <Link href="/">
+          <Link href="/" passHref>
             <h3
               className={
                 "transition duration-2000 text-3xl font-bold mr-4 cursor-pointer " +
