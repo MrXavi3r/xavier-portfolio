@@ -34,10 +34,12 @@ const Contact = () => {
       messageField,
     });
 
-    if (response.statusText.toLocaleLowerCase() === "ok") {
+    console.log(response);
+
+    if (response.status === 200) {
       setValidationMessage({
         status: "success",
-        message: "Thanks, I will reply ASAP",
+        message: "Thanks, I will reply ASAP :)",
       });
     } else {
       setValidationMessage({
