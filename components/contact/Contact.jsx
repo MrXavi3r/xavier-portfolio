@@ -73,17 +73,17 @@ const Contact = () => {
       className="container contact h-auto p-8 bg-gradient-to-r from-purple-50 to-purple-200"
       id="contact"
     >
-      <div className="container lg:flex lg:w-4/5 lg:m-auto items-center justify-between bg-white rounded-3xl">
+      <div className="container lg:flex lg:m-auto items-center justify-between bg-white rounded-3xl">
         <div className="container">
           <form
             noValidate
             onSubmit={handleSubmit}
-            className="flex flex-col items-center justify-center mx-auto p-6 bg-white w-full md:w-3/4"
+            className="flex flex-col items-center justify-center mx-auto p-6 bg-white w-full md:w-3/4 lg:w-5/6 rounded-2xl"
           >
-            <h3 className="font-raleway text-4xl pb-4 font-semibold text-purple-500">
+            <h3 className="lg:pl-10 font-raleway text-4xl pb-4 font-semibold text-purple-500">
               Let's talk
             </h3>
-            <p className="font-serif text-gray-500 pb-4 px-6">
+            <p className="font-serif text-center text-gray-500 pb-4 pl-10 ">
               Want to grab some coffee and ponder the meaning of life with me?
               Fill out this form to send me a message.
             </p>
@@ -111,7 +111,9 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="mb-4 p-2 w-4/5 bg-purple-50 rounded-xl focus-within:text-gray-600"
             />
-            <label htmlFor="name">Your Message:</label>
+            <label htmlFor="name" className="">
+              Your Message:
+            </label>
             <textarea
               placeholder="X! follow the white rabbit..."
               name="message"
@@ -139,7 +141,7 @@ const Contact = () => {
             </span>
           </form>
         </div>
-        <div className="hidden container h-full lg:flex flex-col items-start justify-between space-y-16">
+        <div className="hidden container h-full lg:flex flex-col items-start justify-between space-y-24 xl:space-y-8">
           <div className="w-full mx-auto flex items-start justify-center rounded-xl">
             <Image
               src={NoteImage}
