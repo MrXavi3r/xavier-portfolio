@@ -61,7 +61,7 @@ const Portfolio = () => {
         {data.map((d) => {
           return (
             <div
-              className="w-4/5 h-60 md:h-72 lg:w-2/5 md:my-6 rounded-xl flex items-center justify-around text-white cursor-pointer relative hover:bg-indigo-900 transition-all duration-500 ease-in-out"
+              className="w-4/5 h-60 md:h-72 lg:w-2/5 md:my-6 rounded-xl flex items-center justify-around text-white cursor-pointer relative group hover:bg-indigo-900 transition-all duration-500 ease-in-out"
               key={d.id}
             >
               <Image
@@ -72,7 +72,7 @@ const Portfolio = () => {
                 quality="100"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMUrAcAAKcAkqLcIOsAAAAASUVORK5CYII="
-                className="z-10 hover:opacity-20 hover:z-0"
+                className="z-10 group-hover:opacity-20 group-hover:z-0"
               />
               <h3 className="absolute text-2xl font-semibold md:text-3xl">
                 {d.title}

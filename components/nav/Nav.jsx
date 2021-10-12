@@ -35,9 +35,9 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
             <span className="font-semibold">github.com/MrXavi3r</span>
           </li>
         </a>
-        <li className="hidden md:block">
+        <li className="hidden md:block group">
           <FontAwesomeIcon icon={faPhone} className="mr-1" />{" "}
-          <span className="font-semibold opacity-0 hover:opacity-100">
+          <span className="font-semibold opacity-0 group-hover:opacity-100">
             954-296-6361
           </span>
         </li>
