@@ -1,22 +1,22 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-const Meta = ({title, keywords, description}) => {
-    return (
-        <Head>
-            <meta name='viewport' content='width=device-width, initial-scale=1' />
-            <meta name='keywords' content={keywords} />
-            <meta name='description' content={description} />
-            <meta charSet='utf-8' />
-            <link rel="icon" href="/favicon.ico" />
-            <title>{title}</title>
-        </Head>
-    )
-}
+const Meta = ({ title, keywords, description }) => {
+  return (
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="keywords" content={keywords} />
+      <meta name="description" content={description} />
+      <meta charSet="utf-8" />
+      <link rel="icon" href="/favicon.ico" />
+      <title>{title}</title>
+    </Head>
+  );
+};
 
 Meta.defaultProps = {
-    title: 'Xavier Portfolio',
-    keywords: 'web development, programming, software engineer, react, next.js',
-    description: 'Xavier Ritch personal developer portfolio website'
-}
+  title: "Xavier || Software Developer",
+  keywords: "web development, programming, software engineer, react, next.js",
+  description: "Xavier Ritch personal developer portfolio website",
+};
 
-export default Meta
+export default Meta;
