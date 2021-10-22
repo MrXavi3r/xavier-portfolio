@@ -17,7 +17,7 @@ const Skills = () => {
         </p> */}
       </div>
       <div className="container lg:w-4/5 lg:mx-auto md:mx-auto md:w-4/5 mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 lg:auto-cols-2fr justify-center items-center">
-        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-indigo-100 h-full">
+        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-indigo-100 h-full shadow-xl">
           <Image
             src={React}
             alt="react-logo"
@@ -35,7 +35,7 @@ const Skills = () => {
             components, hooks, context, router & Next.js.
           </p>
         </div>
-        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-gray-400 h-full">
+        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-gray-400 h-full shadow-xl">
           <Image src={Node} alt="node.js logo" width={80} height={80} />
           <h4 className="font-normal text-xl md:text-2xl text-center py-2 font-raleway">
             Backend Integrations
@@ -46,7 +46,7 @@ const Skills = () => {
             from scratch and interfacing with 3rd party APIs.
           </p>
         </div>
-        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-pink-100 h-full">
+        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-pink-100 h-full shadow-xl">
           <Image src={Sass} alt="sass logo" width={80} height={80} />
           <h4 className="font-normal text-xl md:text-2xl font-raleway text-center py-2">
             Styling
@@ -57,7 +57,7 @@ const Skills = () => {
             SCSS, Bootstrap and TailwindCSS framework.
           </p>
         </div>
-        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-green-100 h-full">
+        <div className="p-3 rounded-xl lg:col-span-2 flex flex-col bg-green-100 h-full shadow-xl">
           <Image src={MongoDb} alt="mongoDB logo" width={90} height={90} />
           <h4 className="font-normal text-xl md:text-2xl text-center py-2 font-raleway">
             Databases
